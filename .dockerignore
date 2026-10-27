@@ -1,0 +1,6 @@
+lib/
+dist/
+zvec-plugin
+zvec-data/
+.env.inflow
+.git/
