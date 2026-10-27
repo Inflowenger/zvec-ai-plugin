@@ -123,18 +123,34 @@ One **Query text** drives both halves; either can be overridden. If the
 collection has only one half, the action runs as that half's own search instead
 of failing.
 
-## Develop
+## Run
 
 ```bash
-cp .env.inflow.example .env.inflow    # fill PLUGIN_ID / INFRA_CRED / INFRA_URL
-make deps                             # fetch the engine
-make run
+git clone https://github.com/Inflowenger/zvec-plugin
+cd zvec-plugin
+cp .env.inflow.example .env.inflow   # PLUGIN_ID / INFRA_CRED / INFRA_URL
+./scripts/fetch-zvec-lib.sh          # the zvec engine for this platform
+go run .
 ```
 
 `PLUGIN_ID`, `INFRA_CRED` (base64) and `INFRA_URL` are minted by Infra when the
 plugin is defined in a space — see
 [getting-started](https://github.com/Inflowenger/getting-started). On startup
-the SDK logs each subscribed subject; add the node to a flow to exercise it.
+the plugin logs the engine version and then every subject it subscribed to;
+that log is the confirmation it registered.
+
+> **On a machine with a C compiler installed**, `go run .` turns cgo on and
+> fails with `zvec/c_api.h: No such file or directory`. Run `make run` instead,
+> or `CGO_ENABLED=0 go run .` — see [The native library](#the-native-library).
+> Hosts without a C toolchain (most servers and containers) need nothing extra:
+> Go disables cgo on its own and `go run .` works as written.
+
+**From FloMorphic:** define the plugin under **Extensions**, then either
+download the filled-in `.env.inflow` and run the commands above, or run the
+generated one-liner — it clones, starts, and injects `./plugin.sh` for
+`start / stop / restart / status / logs / update`.
+
+## Develop
 
 ```bash
 make test              # everything that needs no engine

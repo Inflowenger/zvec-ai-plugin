@@ -1,0 +1,17 @@
+zvec-plugin — an Inflowenger plugin node for the zvec embedded vector database
+Copyright 2026 Mehdi Shokohifar
+
+This product includes software developed at Inflowenger
+(https://inflowenger.com).
+
+"Inflowenger", "FloMorphic" and the Inflowenger and FloMorphic logos are
+trademarks of the copyright holder. The Apache License, Version 2.0 does not
+grant permission to use these marks, except as required for reasonable and
+customary use in describing the origin of this work and reproducing the content
+of this NOTICE file.
+
+This product depends on, but does not include, the zvec vector database engine
+(https://github.com/alibaba/zvec) and its Go bindings
+(https://github.com/zvec-ai/zvec-go), both licensed under the Apache License,
+Version 2.0. The engine's shared library is downloaded at install time by
+scripts/fetch-zvec-lib.sh and is not redistributed here.
