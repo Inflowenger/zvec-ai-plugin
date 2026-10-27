@@ -3,7 +3,7 @@ package actions
 import (
 	"github.com/Inflowenger/go-plugin-sdk/formkit"
 	"github.com/Inflowenger/go-plugin-sdk/sdkv1"
-	"github.com/Inflowenger/zvec-plugin/internal/zvecdb"
+	"github.com/Inflowenger/zvec-ai-plugin/internal/zvecdb"
 )
 
 // Every form this plugin serves is declared here with the SDK's formkit

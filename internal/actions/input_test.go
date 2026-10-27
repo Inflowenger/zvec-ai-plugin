@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Inflowenger/zvec-plugin/internal/zvecdb"
+	"github.com/Inflowenger/zvec-ai-plugin/internal/zvecdb"
 )
 
 func TestBuildFilterCombinesRowsWithTheExpression(t *testing.T) {

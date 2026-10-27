@@ -25,8 +25,8 @@ import (
 	"syscall"
 
 	"github.com/Inflowenger/go-plugin-sdk/sdkv1"
-	"github.com/Inflowenger/zvec-plugin/internal/actions"
-	"github.com/Inflowenger/zvec-plugin/internal/zvecdb"
+	"github.com/Inflowenger/zvec-ai-plugin/internal/actions"
+	"github.com/Inflowenger/zvec-ai-plugin/internal/zvecdb"
 )
 
 const version = "v0.1.0"

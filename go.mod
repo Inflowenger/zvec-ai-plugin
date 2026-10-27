@@ -1,4 +1,4 @@
-module github.com/Inflowenger/zvec-plugin
+module github.com/Inflowenger/zvec-ai-plugin
 
 go 1.27
 

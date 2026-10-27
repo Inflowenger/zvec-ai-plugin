@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/Inflowenger/go-plugin-sdk/sdkv1"
-	"github.com/Inflowenger/zvec-plugin/internal/zvecdb"
+	"github.com/Inflowenger/zvec-ai-plugin/internal/zvecdb"
 )
 
 // createInput is the Create collection form. It is the plugin's vocabulary for

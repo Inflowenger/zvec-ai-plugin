@@ -126,8 +126,8 @@ of failing.
 ## Run
 
 ```bash
-git clone https://github.com/Inflowenger/zvec-plugin
-cd zvec-plugin
+git clone https://github.com/Inflowenger/zvec-ai-plugin
+cd zvec-ai-plugin
 cp .env.inflow.example .env.inflow   # PLUGIN_ID / INFRA_CRED / INFRA_URL
 ./scripts/fetch-zvec-lib.sh          # the zvec engine for this platform
 go run .

@@ -10,8 +10,8 @@ import (
 
 	"github.com/Inflowenger/go-plugin-sdk/formkit"
 	"github.com/Inflowenger/go-plugin-sdk/sdkv1"
-	"github.com/Inflowenger/zvec-plugin/internal/embed"
-	"github.com/Inflowenger/zvec-plugin/internal/zvecdb"
+	"github.com/Inflowenger/zvec-ai-plugin/internal/embed"
+	"github.com/Inflowenger/zvec-ai-plugin/internal/zvecdb"
 )
 
 // metaTimeout keeps the meta RPCs snappy: they answer a dialog a user is

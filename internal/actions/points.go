@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/Inflowenger/go-plugin-sdk/sdkv1"
-	"github.com/Inflowenger/zvec-plugin/internal/embed"
-	"github.com/Inflowenger/zvec-plugin/internal/zvecdb"
+	"github.com/Inflowenger/zvec-ai-plugin/internal/embed"
+	"github.com/Inflowenger/zvec-ai-plugin/internal/zvecdb"
 	"github.com/google/uuid"
 )
 
